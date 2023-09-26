@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="plugin" version="1.7.0" client="site" method="upgrade" group="content">
+    <name>Content - h5audio HTML5 audio player</name>
+    <author>Andreas Witez</author>
+    <creationDate>26/09/2013</creationDate>    
+    <copyright>(C) 2023 Andreas Witez</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>    
+    <authorUrl>witez.net</authorUrl>
+    <authorEmail>andreas@witez.net</authorEmail>
+    <version>1.0</version>
+    <description>
+        <![CDATA[
+            h5audio HTML5 audio player by Andreas Witez
+        <BR />
+            <ul>Example:</ul>
+                <li>{h5audio|file=audiofile}</li>
+                <li>{h5audio|file=audiofile|width=<font color="green">put width value you need here.</font>}</li>
+        ]]>
+    </description>
+    <files>
+        <filename plugin="h5audio">h5audio.php</filename>
+        <filename>index.html</filename>
+    </files>
+    <languages />
+    <config>
+        <fields name="params">
+                <fieldset name="basic">
+                    <field name="width" type="text" default="200" label="Default player width" description="default width of audio player" />
+                    <field name="baseurl" type="text" default="images/" label="Base directory for audio file" description="must end with a /" />
+                </fieldset>
+        </fields>
+    </config>
+</extension>
